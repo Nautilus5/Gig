@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gig Feed</title>
+	<link rel="stylesheet" type="text/css" href="../style/base_style.css">
+</head>
+<body>
+	<h1>Feed</h1>
+	<form>
+		<label>Search </label>
+		<input type="text" id="search">
+		<!-- set button onClick method to call function we defined passing input values as parameters -->
+		<button type="button" onclick="callAPI(document.getElementById('fName').value,document.getElementById('lName').value)">Submit</button>
+		<br>
+	</form>
+	<hr>
+
+
+	<div class="posts">
+		<h2>Posts</h2>
+		<table>
+			<tr>
+			<!-- this table should be populated by posts from users you are following-->
+			</tr>
+		</table>
+	</div>
+	<div class="following">
+		<h2>Following</h2>
+		<table>
+			<tr>
+			<!-- this table should be populated by users you are following-->
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
